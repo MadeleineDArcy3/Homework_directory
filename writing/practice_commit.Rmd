@@ -9,3 +9,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r, list files in directory}
+
+list.files("../data")
+
+```
+# reading in data for practice 
+``` {r, reading in homicide data}
+library(tidyverse)
+homicides <- read_csv("../data/homicide-data.csv")
+```
