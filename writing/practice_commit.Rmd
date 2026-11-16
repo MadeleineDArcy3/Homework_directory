@@ -5,12 +5,15 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
+
+# test 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r, list files in directory}
 
+#test commit-----------------------------------------
 list.files("../data")
 
 ```
@@ -18,4 +21,10 @@ list.files("../data")
 ``` {r, reading in homicide data}
 library(tidyverse)
 homicides <- read_csv("../data/homicide-data.csv")
+```
+
+# making sure push and pull is working 
+```{r, testing}
+
+head(homicides)
 ```
